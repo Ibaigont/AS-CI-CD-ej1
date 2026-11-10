@@ -1,0 +1,15 @@
+name: workflow
+
+on: push
+
+jobs:
+  ariketa:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Descargar el código
+        uses: actions/checkout@v7
+      - name: Instalar pytest
+        run: pip install pytest
+      - name: Ejecutar tests
+        run: pytest test.py
