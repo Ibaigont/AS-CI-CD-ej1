@@ -1,7 +1,7 @@
 class Wallet:
     def __init__(self, balance):
         self.balance = balance
-        balance
+        printtttttt(self.balance)
 
     def set_balance(self, val):
         self.balance = self.balance + val
